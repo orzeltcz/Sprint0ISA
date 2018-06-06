@@ -14,7 +14,11 @@ public class Main {
         System.out.println("IV: dzielenie");
         System.out.println("Podaj działanie:");
         String wybor = scanner.next();
-        
+        Operatory a[] = Operatory.values();
+        for(int i=0;i<a.length;i++){
+            if(wybor.equals(a[i]))
+            System.out.println(a[i]);
+        }
 
 
     }
