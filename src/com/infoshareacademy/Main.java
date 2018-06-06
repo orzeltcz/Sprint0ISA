@@ -1,19 +1,21 @@
 package com.infoshareacademy;
 
-
-import com.infoshareacademy.task1.Task1;
+import com.infoshareacademy.task2.Operatory;
 
 import java.util.Scanner;
 
 public class Main {
-    //Funkcja mnożenia z operatorem *
 
-    public static void main(String[] args) {
-        System.out.printf("Podaj dwie liczby:");
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        System.out.println("Funkcja z operatorem *: "+Task1.iloczyn(a, b));
-        System.out.println("Funkcja bez operatora *: "+Task1.iloczynSuma(a, b));
+        System.out.println("I: dodawanie");
+        System.out.println("II: odejmowanie");
+        System.out.println("III: mnozenie");
+        System.out.println("IV: dzielenie");
+        System.out.println("Podaj działanie:");
+        String wybor = scanner.next();
+        
+
+
     }
 }
