@@ -1,6 +1,8 @@
 package com.infoshareacademy;
 
 
+import java.util.Scanner;
+
 public class Main {
     //Funkcja mnożenia z operatorem *
     public static int iloczyn(int a, int b) {
@@ -25,7 +27,11 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println(iloczyn(3, -4));
-        System.out.println(iloczynSuma(-2, -3));
+        System.out.printf("Podaj dwie liczby:");
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        System.out.println("Funkcja z operatorem *: "+iloczyn(a, b));
+        System.out.println("Funkcja bez operatora *: "+iloczynSuma(a, b));
     }
 }
