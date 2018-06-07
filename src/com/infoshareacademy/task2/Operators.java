@@ -1,6 +1,6 @@
 package com.infoshareacademy.task2;
 
-public enum Operatory {
+public enum Operators {
     dodawanie,
     odejmowanie,
     mnozenie,
