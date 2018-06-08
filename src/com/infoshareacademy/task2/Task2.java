@@ -34,7 +34,7 @@ public class Task2 {
         }
     }
     //Kalkulator zwracajacy wyniki
-    public static double dzialanie(int opcja, double[] liczbyDoDzialania) {
+    private static double dzialanie(int opcja, double[] liczbyDoDzialania) {
         double suma = 0, roznica = liczbyDoDzialania[0], iloczyn = liczbyDoDzialania[0], iloraz = liczbyDoDzialania[0];
         switch (opcja) {
             case 1: {
