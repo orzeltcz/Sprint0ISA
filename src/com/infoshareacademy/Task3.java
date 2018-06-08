@@ -10,8 +10,10 @@ public class Task3 {
        System.out.println("Podaj liczbe i przedzialy");
        y = skaner.nextInt();
        z = skaner.nextInt();
+
        int numberOfCharsInRow = 0;
        if (y > z && y > 0 && z > 0) {
+
            numberOfCharsInRow = y / z;
            int valuesTable[][] = new int[z][numberOfCharsInRow];
 
@@ -23,7 +25,6 @@ public class Task3 {
            }
            //tworzenie tablicy przedzialow
            if (y % z == 0 && z != y) {
-
                for (int i = 0; i < z; i++) {
                    for (int j = 0; j < numberOfCharsInRow; j++) {
                        valuesTable[i][j] = values;
@@ -57,7 +58,7 @@ public class Task3 {
            // wyniki
            System.out.println("Wyniki");
            for (int i = 0; i < z; i++) {
-               System.out.print(valuesTable[i][i] + "-" + valuesTable[i][numberOfCharsInRow - 1] + " ");
+               System.out.print(valuesTable[i][0] + "-" + valuesTable[i][numberOfCharsInRow - 1] + " ");
            }
            System.out.println();
            for (int i = 0; i < z; i++) {
