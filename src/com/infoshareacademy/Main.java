@@ -1,6 +1,7 @@
 package com.infoshareacademy;
 
 import com.infoshareacademy.task1.Task1;
+import com.infoshareacademy.task10.Fraction;
 import com.infoshareacademy.task2.Operators;
 import com.infoshareacademy.task2.Task2;
 import com.infoshareacademy.task3.Task3;
@@ -40,6 +41,17 @@ public class Main {
             int[] tab = {5,3,11,14,2,6,13,8};
             Task9 t9 = new Task9();
             t9.bubbleSort(tab);
+
+        Fraction f1 = new Fraction();
+        Fraction f2 = new Fraction();
+        Fraction f3 = new Fraction();
+        Fraction f4 = new Fraction();
+
+        f1.calculate(4,2);
+        f2.calculate(3,4);
+        f3.calculate(1,2);
+        f4.calculate(2,5);
+        
         }
 
     }
