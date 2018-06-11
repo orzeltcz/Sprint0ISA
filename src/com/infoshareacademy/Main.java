@@ -14,8 +14,8 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Task3 task3 = new Task3();
-        task3.przedzialy();
+        int a=Task6.fibonnaci(19);
+        System.out.println(a);
 
         }
 

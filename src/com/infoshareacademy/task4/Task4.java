@@ -1,7 +1,6 @@
 package com.infoshareacademy.task4;
 
 import com.infoshareacademy.task3.Task3;
-import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.util.Scanner;
 

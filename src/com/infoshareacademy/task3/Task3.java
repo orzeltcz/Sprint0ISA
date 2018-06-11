@@ -7,21 +7,20 @@ public class Task3 {
 
     int y;
     int z;
+    int interval;
     Scanner skaner = new Scanner(System.in);
 
    public void przedzialy () {
        System.out.println("Podaj liczbe i przedzialy");
        this.y = skaner.nextInt();
        this.z = skaner.nextInt();
-       int[] tab = new int[z];
-       tab[0] = y / z;
-       for (int i = 1; i < z; i++) {
-           tab[i] = tab[i - 1] + tab[0];
-       }
-       losuj(tab);
+       this.interval = y/z;
+
+       losuj(interval);
    }
-private void losuj(int[] tab){
-       int[] wynik = new int[tab.length];
+private void losuj(int interval){
+       int helperInterval = interval;
+       int[] wynik = new int[z];
     Random random = new Random();
     int rand;
     System.out.println("Podaj ilosc losowan");
@@ -29,19 +28,21 @@ private void losuj(int[] tab){
     for (int i = 0; i < amountOfRoll; i++) {
         rand = random.nextInt(y);
         for (int j = 0; j <z; j++) {
-            if (rand < tab[j]) {
+            if (rand < helperInterval) {
                 wynik[j] += 1;
+                helperInterval=this.interval;
                 break;
             }
+            helperInterval+=this.interval;
         }
     }
-    print(wynik,tab);
+    System.out.println(helperInterval);
+    print(wynik,helperInterval);
 }
-private void print(int[] wynik,int[] tab){
-
-    for (int i = 0; i < z; i++) {
-        if(i==0) System.out.print("0-"+tab[i]);
-          else  System.out.print(tab[i-1]+"-"+tab[i]);
+private void print(int[] wynik, int helperInterval){
+    for (int i = 0; i < z; i++,helperInterval+=interval) {
+        if(i==0) System.out.print("0-"+helperInterval);
+          else  System.out.print((helperInterval-interval)+"-"+helperInterval);
         System.out.println(" ilość trafień: "+wynik[i]);
     }
 }
