@@ -4,6 +4,7 @@ import com.infoshareacademy.task1.Task1;
 import com.infoshareacademy.task10.Fraction;
 import com.infoshareacademy.task11.Decimal;
 import com.infoshareacademy.task12.Read;
+import com.infoshareacademy.task13.Tables;
 import com.infoshareacademy.task2.Operators;
 import com.infoshareacademy.task2.Task2;
 import com.infoshareacademy.task3.Task3;
@@ -55,8 +56,10 @@ public class Main {
 //        f4.calculate(2,5);
 //        Decimal.Binary();
 
-        Read.read();
-        }
+//        Read.read();
 
+        Tables tab1 = new Tables();
+        tab1.enterData();
+        }
     }
 
