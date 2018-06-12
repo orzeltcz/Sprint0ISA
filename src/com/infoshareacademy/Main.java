@@ -5,6 +5,7 @@ import com.infoshareacademy.task10.Fraction;
 import com.infoshareacademy.task11.Decimal;
 import com.infoshareacademy.task12.Read;
 import com.infoshareacademy.task13.Tables;
+import com.infoshareacademy.task14.Euklides;
 import com.infoshareacademy.task2.Operators;
 import com.infoshareacademy.task2.Task2;
 import com.infoshareacademy.task3.Task3;
@@ -58,8 +59,17 @@ public class Main {
 
 //        Read.read();
 
-        Tables tab1 = new Tables();
-        tab1.enterData();
+ //       Tables tab1 = new Tables();
+        // tab1.enterData();
+//        Euklides euklides = new Euklides();
+//        euklides.firstPrint();
+        int[] a = new int[100];
+        for (int i = 1; i < 100; i++) {
+            if(i%100==0) a[i]=i;
+        }
+        for (int b: a) {
+            System.out.println(b);
+        }
         }
     }
 
