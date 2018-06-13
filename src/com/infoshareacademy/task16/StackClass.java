@@ -3,24 +3,22 @@ package com.infoshareacademy.task16;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StackClass implements Stack {
-    List<Object> stack = new ArrayList<>();
+public class StackClass<K> implements Stack<K> {
+    List<K> stack = new ArrayList<>();
+    K obj;
     @Override
-    public void push(Object o) {
+    public void push(K o) {
         stack.add(o);
     }
 
     @Override
-    public Object pop() {
-        Object obj = stack.get(stack.size()-1);
+    public K pop() {
+        obj = stack.get(stack.size()-1);
         stack.remove(stack.size()-1);
         return obj;
     }
-    public void print(){
-        System.out.println(stack.get(stack.size()-1));
-    }
     @Override
-    public Object peek() {
-        return null;
+    public K peek() {
+      return stack.get(stack.size()-1);
     }
 }

@@ -8,6 +8,10 @@ import com.infoshareacademy.task13.Tables;
 import com.infoshareacademy.task14.Euklides;
 import com.infoshareacademy.task15.QueueClass;
 import com.infoshareacademy.task16.StackClass;
+import com.infoshareacademy.task17.FigurePrint;
+import com.infoshareacademy.task17.Kolo;
+import com.infoshareacademy.task17.Prostokat;
+import com.infoshareacademy.task17.Trojkat;
 import com.infoshareacademy.task2.Operators;
 import com.infoshareacademy.task2.Task2;
 import com.infoshareacademy.task3.Task3;
@@ -72,9 +76,17 @@ public class Main {
 //        qq.enqueue(new Tables());
 //
 //        System.out.println(qq.dequeue());
-        StackClass sk = new StackClass();
-        sk.push(new Euklides());
-        sk.print();
+
+//        StackClass sk = new StackClass();
+//        sk.push(new Euklides());
+//        sk.push(new Tables());
+//        System.out.println(sk.peek());
+        Prostokat pr = new Prostokat(3.5,4.6);
+        pr.print(pr);
+        Kolo kl = new Kolo(3.6);
+        Trojkat tr = new Trojkat(33,43,12,12.2);
+        kl.print(kl);
+        tr.print(tr);
         }
     }
 
