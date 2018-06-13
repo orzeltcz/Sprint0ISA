@@ -24,9 +24,6 @@ private int b;
 
         for (int i = 1; i <= a; i++) {
             if(a%i==0) dividers1.add(i);
-
-        }
-        for (int i = 1; i <= b; i++) {
             if(b%i==0) dividers2.add(i);
         }
         compare(dividers1,dividers2);

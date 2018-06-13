@@ -6,6 +6,7 @@ import com.infoshareacademy.task11.Decimal;
 import com.infoshareacademy.task12.Read;
 import com.infoshareacademy.task13.Tables;
 import com.infoshareacademy.task14.Euklides;
+import com.infoshareacademy.task15.QueueClass;
 import com.infoshareacademy.task2.Operators;
 import com.infoshareacademy.task2.Task2;
 import com.infoshareacademy.task3.Task3;
@@ -63,8 +64,13 @@ public class Main {
         // tab1.enterData();
 //        Euklides euklides = new Euklides();
 //        euklides.firstPrint();
-        Euklides euklides = new Euklides();
-        euklides.firstPrint();
+  //      Euklides euklides = new Euklides();
+    //    euklides.firstPrint();
+        QueueClass qq = new QueueClass();
+        qq.enqueue(new Euklides());
+        qq.enqueue(new Tables());
+
+        System.out.println(qq.dequeue());
         }
     }
 
